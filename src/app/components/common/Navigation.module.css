@@ -1,0 +1,14 @@
+.Navigation{
+margin-top: 200px;
+padding: 6px;
+border-radius: 4px;
+font-size: 18px;
+font-weight: bold;
+color: rgb(72, 48, 94);
+background: white;
+border: 2px #ccc solid;
+}
+
+nav{
+    text-align: center;
+}

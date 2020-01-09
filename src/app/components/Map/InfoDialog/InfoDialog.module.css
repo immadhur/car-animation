@@ -1,0 +1,21 @@
+.Body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "main1 main2"
+    "main3 main4";
+}
+
+.Body p{
+    margin: 2px;
+}
+
+.Body div{
+    margin: 10px 0px;
+}
+
+.subHeading{
+    font-size: 11px;
+    color: gray;
+}

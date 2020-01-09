@@ -1,7 +1,9 @@
+import $ from 'jquery';
+
 export function correctHeight() {
 
     var pageWrapper = $('#page-wrapper');
-    var navbarHeigh = $('nav.navbar-default').height();
+    var navbarHeight = $('nav.navbar-default').height();
     var wrapperHeigh = pageWrapper.height();
 
     if (navbarHeight > wrapperHeigh) {

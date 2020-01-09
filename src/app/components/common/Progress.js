@@ -1,9 +1,9 @@
 import React from 'react';
-import pace from '../../../public/vendor/pace/pace';
+// import pace from '../../../public/vendor/pace/pace';
 
 class Progress extends React.Component {
     componentDidMount() {
-        pace.start();
+        // pace.start();
     }
 
     render() {

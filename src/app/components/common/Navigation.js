@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import $ from 'jquery';
+import style from './Navigation.module.css';
 
 class Navigation extends Component {
 
     componentDidMount() {
         const { menu } = this.refs;
-        $(menu).metisMenu();
+        $(menu);
     }
 
     activeRoute(routeName) {
@@ -20,7 +22,12 @@ class Navigation extends Component {
     render() {
         return (
             <nav className="navbar-default navbar-static-side" role="navigation">
-                    <ul className="nav metismenu" id="side-menu" ref="menu">
+                <button className={style.Navigation} onClick={()=>this.props.clickHandler()}>{(this.props.isStarted?'Stop ':'Start ')+'Navigation'}</button>
+                {/* <div>
+                    <p>From</p>
+                    <p></p>
+                </div> */}
+                   {/* <ul className="nav metismenu" id="side-menu" ref="menu">
                         <li className="nav-header">
                             <div className="dropdown profile-element"> <span>
                              </span>
@@ -41,7 +48,7 @@ class Navigation extends Component {
                         <li className={this.activeRoute("/minor")}>
                             <Link to="/minor"><i className="fa fa-th-large"></i> <span className="nav-label">Minor view</span></Link>
                         </li>
-                    </ul>
+                    </ul>*/}
 
             </nav>
         )
