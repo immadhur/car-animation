@@ -93,5 +93,5 @@ class MapView extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyBi5oNEGQNX5dWdwni8XGPrI5fo2wekSCo'
+    apiKey: 'ENTER_API_KEY'
 })(MapView);
